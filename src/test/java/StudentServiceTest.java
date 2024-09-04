@@ -10,7 +10,7 @@ class StudentServiceTest {
     }
 
     @Test
-    void findStudentById_shouldReturnStudent_whenStudentExists() {
+    void findStudentById_shouldNotThrow_whenStudentExists() {
         StudentService studentService = new StudentService();
         Student student = Student.builder()
                 .id("1")
